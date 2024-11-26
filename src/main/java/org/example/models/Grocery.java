@@ -44,7 +44,9 @@ public class Grocery {
             } else {
                 groceryList.remove(item);
             }
+
         }
+        Collections.sort(groceryList);
     }
 
 
@@ -57,7 +59,9 @@ public class Grocery {
             } else {
                 groceryList.add(item);
             }
+
         }
+        Collections.sort(groceryList);
     }
 
     public static boolean checkItemIsInList(String item) {

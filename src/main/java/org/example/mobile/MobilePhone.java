@@ -26,15 +26,15 @@ public class MobilePhone {
         if (findContact(contact.getName()) >= 0) {
             return false;
         }
-        // Add missing return statement here
+        myContacts.add(contact);
         return true;
     }
 
-    private int findContact(Contact contact) {
+    public int findContact(Contact contact) {
         return this.myContacts.indexOf(contact);
     }
 
-    private int findContact(String name) {
+    public int findContact(String name) {
         for (int i = 0; i < myContacts.size(); i++) {
             Contact contact = myContacts.get(i);
             if (contact.getName().equalsIgnoreCase(name)) {
